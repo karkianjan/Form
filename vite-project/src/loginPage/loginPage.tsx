@@ -20,17 +20,19 @@ const LoginPage: React.FC = () => {
         <div>
             <form onSubmit={handleLogin}>
                 <div className="">
-                <label>USERNAME</label>
-                <input type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                    <label>USERNAME</label>
+                    <input type="email"
+                    placeholder="EMAIL"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
                 </div>
-                <div className="">
-                <label>PASSWORD</label>
-                <input type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}/>
+                    <div className="">
+                    <label>PASSWORD</label>
+                    <input type="password"
+                    placeholder="PASSWORD"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}/>
                 </div>
             </form>
         </div>
